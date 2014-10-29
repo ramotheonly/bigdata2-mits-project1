@@ -1,0 +1,147 @@
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_3fa4d73f-a0fe-4d1d-a496-e69997c57166_1010742072.txt
+OK
+Time taken: 2.139 seconds
+OK
+Time taken: 0.122 seconds
+OK
+Time taken: 0.35 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_3e05d0bc-1745-4416-8381-c6378d7f37d7_1225918834.txt
+OK
+Time taken: 3.868 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_fab90044-823e-4f2a-b919-4e58334b8262_2068904203.txt
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201410211622_0026, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_201410211622_0026
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_201410211622_0026
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2014-10-28 19:43:16,620 Stage-1 map = 0%,  reduce = 0%
+2014-10-28 19:43:22,657 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:23,674 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:24,685 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:25,693 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:26,703 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:27,710 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.77 sec
+2014-10-28 19:43:28,732 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.1 sec
+2014-10-28 19:43:29,744 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.1 sec
+2014-10-28 19:43:30,753 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.1 sec
+2014-10-28 19:43:31,764 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.1 sec
+MapReduce Total cumulative CPU time: 2 seconds 100 msec
+Ended Job = job_201410211622_0026
+MapReduce Jobs Launched: 
+Job 0: Map: 1  Reduce: 1   Cumulative CPU: 2.1 sec   HDFS Read: 683 HDFS Write: 201 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 100 msec
+OK
+Time taken: 23.782 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_c5ef9ce4-5958-4938-907a-be470ff50d9b_1003798972.txt
+OK
+Time taken: 1.897 seconds
+OK
+Time taken: 0.12 seconds
+OK
+Time taken: 0.123 seconds
+OK
+Time taken: 0.593 seconds
+OK
+Time taken: 0.179 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.095 seconds
+Total MapReduce jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201410211622_0027, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_201410211622_0027
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_201410211622_0027
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2014-10-28 19:43:46,984 Stage-1 map = 0%,  reduce = 0%
+2014-10-28 19:43:53,024 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.02 sec
+2014-10-28 19:43:54,043 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.02 sec
+2014-10-28 19:43:55,055 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.02 sec
+2014-10-28 19:43:56,066 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.02 sec
+MapReduce Total cumulative CPU time: 1 seconds 20 msec
+Ended Job = job_201410211622_0027
+Ended Job = -1798780044, job is filtered out (removed at runtime).
+Ended Job = 580764014, job is filtered out (removed at runtime).
+Moving data to: hdfs://localhost.localdomain:8020/tmp/hive-cloudera/hive_2014-10-28_19-43-38_215_6229657045344208699-1/-ext-10000
+Loading data to table default.year1999
+Table default.year1999 stats: [num_partitions: 0, num_files: 0, num_rows: 0, total_size: 0, raw_data_size: 0]
+6 Rows loaded to year1999
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.02 sec   HDFS Read: 683 HDFS Write: 216 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 20 msec
+OK
+Time taken: 18.432 seconds
+Total MapReduce jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201410211622_0028, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_201410211622_0028
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_201410211622_0028
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2014-10-28 19:44:01,173 Stage-1 map = 0%,  reduce = 0%
+2014-10-28 19:44:06,211 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.03 sec
+2014-10-28 19:44:07,222 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.03 sec
+2014-10-28 19:44:08,228 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.03 sec
+2014-10-28 19:44:09,235 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.03 sec
+MapReduce Total cumulative CPU time: 1 seconds 30 msec
+Ended Job = job_201410211622_0028
+Ended Job = -2061360585, job is filtered out (removed at runtime).
+Ended Job = 816585059, job is filtered out (removed at runtime).
+Moving data to: hdfs://localhost.localdomain:8020/tmp/hive-cloudera/hive_2014-10-28_19-43-56_648_5643873920097895952-1/-ext-10000
+Loading data to table default.year2000
+Table default.year2000 stats: [num_partitions: 0, num_files: 0, num_rows: 0, total_size: 0, raw_data_size: 0]
+4 Rows loaded to year2000
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.03 sec   HDFS Read: 683 HDFS Write: 152 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 30 msec
+OK
+Time taken: 12.88 seconds
+Total MapReduce jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201410211622_0029, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_201410211622_0029
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_201410211622_0029
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2014-10-28 19:44:14,097 Stage-1 map = 0%,  reduce = 0%
+2014-10-28 19:44:21,128 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.05 sec
+2014-10-28 19:44:22,137 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.05 sec
+2014-10-28 19:44:23,145 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.05 sec
+2014-10-28 19:44:24,153 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.05 sec
+MapReduce Total cumulative CPU time: 1 seconds 50 msec
+Ended Job = job_201410211622_0029
+Ended Job = 1667820813, job is filtered out (removed at runtime).
+Ended Job = -171462373, job is filtered out (removed at runtime).
+Moving data to: hdfs://localhost.localdomain:8020/tmp/hive-cloudera/hive_2014-10-28_19-44-09_529_7200155579813647434-1/-ext-10000
+Loading data to table default.year2001
+Table default.year2001 stats: [num_partitions: 0, num_files: 0, num_rows: 0, total_size: 0, raw_data_size: 0]
+2 Rows loaded to year2001
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.05 sec   HDFS Read: 683 HDFS Write: 77 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 50 msec
+OK
+Time taken: 14.999 seconds
+OK
+Time taken: 0.114 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_c811fcba-31b5-4254-8d5d-f2b4eeaa7956_4282413.txt
+OK
+Time taken: 3.904 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_2414f610-94e7-4778-ab1a-5780ac17c74f_106015027.txt
+OK
+Time taken: 3.259 seconds
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_20be74fc-a994-425e-88c3-4666e18b9967_1918452691.txt
+OK
+Time taken: 3.67 seconds

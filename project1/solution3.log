@@ -1,0 +1,237 @@
+2014-10-28 19:56:19,082 [main] INFO  org.apache.pig.Main - Apache Pig version 0.11.0-cdh4.4.0 (rexported) compiled Sep 03 2013, 20:25:46
+2014-10-28 19:56:19,083 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/cloudera/rakesh/project1/pig_1414544179072.log
+2014-10-28 19:56:19,829 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/cloudera/.pigbootup not found
+2014-10-28 19:56:19,974 [main] WARN  org.apache.hadoop.conf.Configuration - fs.default.name is deprecated. Instead, use fs.defaultFS
+2014-10-28 19:56:19,983 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+2014-10-28 19:56:20,534 [main] WARN  org.apache.hadoop.conf.Configuration - io.bytes.per.checksum is deprecated. Instead, use dfs.bytes-per-checksum
+2014-10-28 19:56:20,535 [main] WARN  org.apache.hadoop.conf.Configuration - dfs.umaskmode is deprecated. Instead, use fs.permissions.umask-mode
+2014-10-28 19:56:20,535 [main] WARN  org.apache.hadoop.conf.Configuration - topology.node.switch.mapping.impl is deprecated. Instead, use net.topology.node.switch.mapping.impl
+2014-10-28 19:56:20,537 [main] WARN  org.apache.hadoop.conf.Configuration - dfs.df.interval is deprecated. Instead, use fs.df.interval
+2014-10-28 19:56:20,537 [main] WARN  org.apache.hadoop.conf.Configuration - topology.script.number.args is deprecated. Instead, use net.topology.script.number.args
+2014-10-28 19:56:20,537 [main] WARN  org.apache.hadoop.conf.Configuration - hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+2014-10-28 19:56:20,816 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,DISTINCT
+2014-10-28 19:56:20,925 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for trans: $1, $2, $3
+2014-10-28 19:56:21,183 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2014-10-28 19:56:21,199 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.CombinerOptimizer - Choosing to move algebraic foreach to combiner
+2014-10-28 19:56:21,226 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 2
+2014-10-28 19:56:21,226 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 2
+2014-10-28 19:56:21,339 [main] WARN  org.apache.hadoop.conf.Configuration - session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-10-28 19:56:21,340 [main] INFO  org.apache.hadoop.metrics.jvm.JvmMetrics - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-10-28 19:56:21,387 [main] WARN  org.apache.pig.backend.hadoop23.PigJobControl - falling back to default JobControl (not using hadoop 0.23 ?)
+java.lang.NoSuchFieldException: jobsInProgress
+	at java.lang.Class.getDeclaredField(Class.java:1882)
+	at org.apache.pig.backend.hadoop23.PigJobControl.<clinit>(PigJobControl.java:58)
+	at org.apache.pig.backend.hadoop.executionengine.shims.HadoopShims.newJobControl(HadoopShims.java:102)
+	at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler.compile(JobControlCompiler.java:285)
+	at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher.launchPig(MapReduceLauncher.java:177)
+	at org.apache.pig.PigServer.launchPlan(PigServer.java:1266)
+	at org.apache.pig.PigServer.executeCompiledLogicalPlan(PigServer.java:1251)
+	at org.apache.pig.PigServer.execute(PigServer.java:1241)
+	at org.apache.pig.PigServer.executeBatch(PigServer.java:335)
+	at org.apache.pig.tools.grunt.GruntParser.executeBatch(GruntParser.java:137)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:198)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:170)
+	at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:84)
+	at org.apache.pig.Main.run(Main.java:475)
+	at org.apache.pig.Main.main(Main.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:208)
+2014-10-28 19:56:21,395 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2014-10-28 19:56:21,415 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2014-10-28 19:56:21,432 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2014-10-28 19:56:21,437 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=236
+2014-10-28 19:56:21,442 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2014-10-28 19:56:21,517 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2014-10-28 19:56:21,536 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2014-10-28 19:56:21,537 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2014-10-28 19:56:21,537 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Distributed cache not supported or needed in local mode. Setting key [pig.schematuple.local.dir] with code temp directory: /tmp/1414544181535-0
+2014-10-28 19:56:21,541 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting identity combiner class.
+2014-10-28 19:56:21,661 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2014-10-28 19:56:21,681 [JobControl] INFO  org.apache.hadoop.metrics.jvm.JvmMetrics - Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+2014-10-28 19:56:21,728 [JobControl] WARN  org.apache.hadoop.mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2014-10-28 19:56:21,731 [JobControl] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2014-10-28 19:56:21,748 [JobControl] WARN  org.apache.hadoop.conf.Configuration - fs.default.name is deprecated. Instead, use fs.defaultFS
+2014-10-28 19:56:21,749 [JobControl] WARN  org.apache.hadoop.conf.Configuration - io.bytes.per.checksum is deprecated. Instead, use dfs.bytes-per-checksum
+2014-10-28 19:56:21,815 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2014-10-28 19:56:21,818 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2014-10-28 19:56:21,860 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2014-10-28 19:56:22,169 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2014-10-28 19:56:22,250 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+2014-10-28 19:56:22,289 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - dfs.df.interval is deprecated. Instead, use fs.df.interval
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - fs.default.name is deprecated. Instead, use fs.defaultFS
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - topology.script.number.args is deprecated. Instead, use net.topology.script.number.args
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - dfs.umaskmode is deprecated. Instead, use fs.permissions.umask-mode
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - topology.node.switch.mapping.impl is deprecated. Instead, use net.topology.node.switch.mapping.impl
+2014-10-28 19:56:22,292 [Thread-3] WARN  org.apache.hadoop.conf.Configuration - io.bytes.per.checksum is deprecated. Instead, use dfs.bytes-per-checksum
+2014-10-28 19:56:22,294 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigOutputCommitter
+2014-10-28 19:56:22,338 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+2014-10-28 19:56:22,341 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1511585119_0001_m_000000_0
+2014-10-28 19:56:22,404 [pool-1-thread-1] WARN  mapreduce.Counters - Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2014-10-28 19:56:22,523 [pool-1-thread-1] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+2014-10-28 19:56:22,547 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@15d45d9
+2014-10-28 19:56:22,560 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Processing split: Number of splits :1
+Total Length = 236
+Input split[0]:
+   Length = 236
+  Locations:
+
+-----------------------
+
+2014-10-28 19:56:22,574 [pool-1-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader - Current split being processed file:/home/cloudera/rakesh/project1/transactions.txt:0+236
+2014-10-28 19:56:22,599 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-10-28 19:56:22,608 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+2014-10-28 19:56:22,709 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+2014-10-28 19:56:22,709 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.max.objects is deprecated. Instead, use dfs.namenode.max.objects
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.data.dir is deprecated. Instead, use dfs.datanode.data.dir
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.name.dir is deprecated. Instead, use dfs.namenode.name.dir
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - fs.checkpoint.dir is deprecated. Instead, use dfs.namenode.checkpoint.dir
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.access.time.precision is deprecated. Instead, use dfs.namenode.accesstime.precision
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.replication.min is deprecated. Instead, use dfs.namenode.replication.min
+2014-10-28 19:56:22,716 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.name.edits.dir is deprecated. Instead, use dfs.namenode.edits.dir
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.replication.considerLoad is deprecated. Instead, use dfs.namenode.replication.considerLoad
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.balance.bandwidthPerSec is deprecated. Instead, use dfs.datanode.balance.bandwidthPerSec
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.safemode.threshold.pct is deprecated. Instead, use dfs.namenode.safemode.threshold-pct
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.http.address is deprecated. Instead, use dfs.namenode.http-address
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.name.dir.restore is deprecated. Instead, use dfs.namenode.name.dir.restore
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.https.client.keystore.resource is deprecated. Instead, use dfs.client.https.keystore.resource
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.backup.address is deprecated. Instead, use dfs.namenode.backup.address
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.backup.http.address is deprecated. Instead, use dfs.namenode.backup.http-address
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.permissions is deprecated. Instead, use dfs.permissions.enabled
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.safemode.extension is deprecated. Instead, use dfs.namenode.safemode.extension
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.datanode.max.xcievers is deprecated. Instead, use dfs.datanode.max.transfer.threads
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.https.need.client.auth is deprecated. Instead, use dfs.client.https.need-auth
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.https.address is deprecated. Instead, use dfs.namenode.https-address
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.replication.interval is deprecated. Instead, use dfs.namenode.replication.interval
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - fs.checkpoint.edits.dir is deprecated. Instead, use dfs.namenode.checkpoint.edits.dir
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.write.packet.size is deprecated. Instead, use dfs.client-write-packet-size
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.permissions.supergroup is deprecated. Instead, use dfs.permissions.superusergroup
+2014-10-28 19:56:22,717 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.secondary.http.address is deprecated. Instead, use dfs.namenode.secondary.http-address
+2014-10-28 19:56:22,718 [pool-1-thread-1] WARN  org.apache.hadoop.conf.Configuration - fs.checkpoint.period is deprecated. Instead, use dfs.namenode.checkpoint.period
+2014-10-28 19:56:22,727 [pool-1-thread-1] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2014-10-28 19:56:22,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local1511585119_0001
+2014-10-28 19:56:22,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases trans,trans_custs
+2014-10-28 19:56:22,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: trans[1,8],trans_custs[-1,-1] C:  R: 
+2014-10-28 19:56:22,784 [pool-1-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigGenericMapReduce$Map - Aliases being processed per job phase (AliasName[line,offset]): M: trans[1,8],trans_custs[-1,-1] C:  R: 
+2014-10-28 19:56:22,819 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:22,820 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+2014-10-28 19:56:22,869 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+2014-10-28 19:56:22,870 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local1511585119_0001_m_000000_0 is done. And is in the process of commiting
+2014-10-28 19:56:22,885 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:22,885 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local1511585119_0001_m_000000_0' done.
+2014-10-28 19:56:22,885 [pool-1-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1511585119_0001_m_000000_0
+2014-10-28 19:56:22,885 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - Map task executor complete.
+2014-10-28 19:56:22,889 [Thread-3] WARN  mapreduce.Counters - Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2014-10-28 19:56:22,910 [Thread-3] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@4b94ba17
+2014-10-28 19:56:22,911 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:22,915 [Thread-3] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+2014-10-28 19:56:22,924 [Thread-3] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 81 bytes
+2014-10-28 19:56:22,924 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:22,939 [Thread-3] WARN  org.apache.pig.data.SchemaTupleBackend - SchemaTupleBackend has already been initialized
+2014-10-28 19:56:22,944 [Thread-3] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigMapReduce$Reduce - Aliases being processed per job phase (AliasName[line,offset]): M: trans[1,8],trans_custs[-1,-1] C:  R: 
+2014-10-28 19:56:22,946 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local1511585119_0001_r_000000_0 is done. And is in the process of commiting
+2014-10-28 19:56:22,949 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:22,951 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task attempt_local1511585119_0001_r_000000_0 is allowed to commit now
+2014-10-28 19:56:22,956 [Thread-3] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local1511585119_0001_r_000000_0' to file:/tmp/temp2070915662/tmp1623847334
+2014-10-28 19:56:22,961 [Thread-3] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+2014-10-28 19:56:22,962 [Thread-3] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local1511585119_0001_r_000000_0' done.
+2014-10-28 19:56:27,262 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2014-10-28 19:56:27,265 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local1511585119_0001
+2014-10-28 19:56:27,267 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+2014-10-28 19:56:27,268 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2014-10-28 19:56:27,268 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2014-10-28 19:56:27,278 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2014-10-28 19:56:27,321 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2014-10-28 19:56:27,323 [JobControl] INFO  org.apache.hadoop.metrics.jvm.JvmMetrics - Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+2014-10-28 19:56:27,331 [JobControl] WARN  org.apache.hadoop.mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2014-10-28 19:56:27,332 [JobControl] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2014-10-28 19:56:27,350 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2014-10-28 19:56:27,350 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2014-10-28 19:56:27,351 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2014-10-28 19:56:27,425 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter set in config null
+2014-10-28 19:56:27,438 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - dfs.df.interval is deprecated. Instead, use fs.df.interval
+2014-10-28 19:56:27,439 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+2014-10-28 19:56:27,439 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - fs.default.name is deprecated. Instead, use fs.defaultFS
+2014-10-28 19:56:27,439 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - topology.script.number.args is deprecated. Instead, use net.topology.script.number.args
+2014-10-28 19:56:27,440 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - dfs.umaskmode is deprecated. Instead, use fs.permissions.umask-mode
+2014-10-28 19:56:27,440 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - topology.node.switch.mapping.impl is deprecated. Instead, use net.topology.node.switch.mapping.impl
+2014-10-28 19:56:27,440 [Thread-9] WARN  org.apache.hadoop.conf.Configuration - io.bytes.per.checksum is deprecated. Instead, use dfs.bytes-per-checksum
+2014-10-28 19:56:27,440 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - OutputCommitter is org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigOutputCommitter
+2014-10-28 19:56:27,442 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - Waiting for map tasks
+2014-10-28 19:56:27,442 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Starting task: attempt_local1994581066_0002_m_000000_0
+2014-10-28 19:56:27,442 [pool-4-thread-1] WARN  mapreduce.Counters - Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2014-10-28 19:56:27,459 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5a0eddac
+2014-10-28 19:56:27,460 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Processing split: Number of splits :1
+Total Length = 47
+Input split[0]:
+   Length = 47
+  Locations:
+
+-----------------------
+
+2014-10-28 19:56:27,463 [pool-4-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigRecordReader - Current split being processed file:/tmp/temp2070915662/tmp1623847334/part-r-00000:0+47
+2014-10-28 19:56:27,463 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2014-10-28 19:56:27,463 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+2014-10-28 19:56:27,539 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+2014-10-28 19:56:27,539 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+2014-10-28 19:56:27,541 [pool-4-thread-1] WARN  org.apache.hadoop.conf.Configuration - dfs.https.address is deprecated. Instead, use dfs.namenode.https-address
+2014-10-28 19:56:27,555 [pool-4-thread-1] WARN  org.apache.pig.data.SchemaTupleBackend - SchemaTupleBackend has already been initialized
+2014-10-28 19:56:27,560 [pool-4-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigGenericMapReduce$Map - Aliases being processed per job phase (AliasName[line,offset]): M: cust_count[-1,-1],cust_grp[12,11] C: cust_count[-1,-1],cust_grp[12,11] R: cust_count[-1,-1]
+2014-10-28 19:56:27,563 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:27,563 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+2014-10-28 19:56:27,583 [pool-4-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigCombiner$Combine - Aliases being processed per job phase (AliasName[line,offset]): M: cust_count[-1,-1],cust_grp[12,11] C: cust_count[-1,-1],cust_grp[12,11] R: cust_count[-1,-1]
+2014-10-28 19:56:27,587 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+2014-10-28 19:56:27,589 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local1994581066_0002_m_000000_0 is done. And is in the process of commiting
+2014-10-28 19:56:27,589 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:27,589 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local1994581066_0002_m_000000_0' done.
+2014-10-28 19:56:27,589 [pool-4-thread-1] INFO  org.apache.hadoop.mapred.LocalJobRunner - Finishing task: attempt_local1994581066_0002_m_000000_0
+2014-10-28 19:56:27,590 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - Map task executor complete.
+2014-10-28 19:56:27,590 [Thread-9] WARN  mapreduce.Counters - Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2014-10-28 19:56:27,598 [Thread-9] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@15517e5e
+2014-10-28 19:56:27,603 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:27,607 [Thread-9] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+2014-10-28 19:56:27,607 [Thread-9] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+2014-10-28 19:56:27,607 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:27,623 [Thread-9] WARN  org.apache.pig.data.SchemaTupleBackend - SchemaTupleBackend has already been initialized
+2014-10-28 19:56:27,645 [Thread-9] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigMapReduce$Reduce - Aliases being processed per job phase (AliasName[line,offset]): M: cust_count[-1,-1],cust_grp[12,11] C: cust_count[-1,-1],cust_grp[12,11] R: cust_count[-1,-1]
+2014-10-28 19:56:27,651 [Thread-9] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local1994581066_0002_r_000000_0 is done. And is in the process of commiting
+2014-10-28 19:56:27,653 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+2014-10-28 19:56:27,655 [Thread-9] INFO  org.apache.hadoop.mapred.Task - Task attempt_local1994581066_0002_r_000000_0 is allowed to commit now
+2014-10-28 19:56:27,663 [Thread-9] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local1994581066_0002_r_000000_0' to /home/cloudera/rakesh/project1/output/cust_with_orders_count
+2014-10-28 19:56:27,665 [Thread-9] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+2014-10-28 19:56:27,665 [Thread-9] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local1994581066_0002_r_000000_0' done.
+2014-10-28 19:56:27,822 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local1994581066_0002
+2014-10-28 19:56:27,822 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases cust_count,cust_grp
+2014-10-28 19:56:27,823 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: cust_count[-1,-1],cust_grp[12,11] C: cust_count[-1,-1],cust_grp[12,11] R: cust_count[-1,-1]
+2014-10-28 19:56:32,832 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local1994581066_0002
+2014-10-28 19:56:32,834 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2014-10-28 19:56:32,834 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+2014-10-28 19:56:32,835 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.0.0-cdh4.4.0	0.11.0-cdh4.4.0	cloudera	2014-10-28 19:56:21	2014-10-28 19:56:32	GROUP_BY,DISTINCT
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Alias	Feature	Outputs
+job_local1511585119_0001	trans,trans_custs	DISTINCT	
+job_local1994581066_0002	cust_count,cust_grp	GROUP_BY,COMBINER	/home/cloudera/rakesh/project1/output/cust_with_orders_count,
+
+Input(s):
+Successfully read records from: "/home/cloudera/rakesh/project1/transactions.txt"
+
+Output(s):
+Successfully stored records in: "/home/cloudera/rakesh/project1/output/cust_with_orders_count"
+
+Job DAG:
+job_local1511585119_0001	->	job_local1994581066_0002,
+job_local1994581066_0002
+
+
+2014-10-28 19:56:32,836 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!

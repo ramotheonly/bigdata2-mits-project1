@@ -1,0 +1,60 @@
+----------------------------------------------------------------
+2014-10-29 00:43:40.846 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance a816c00e-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:43:42.297 GMT:
+Shutting down instance a816c00e-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
+----------------------------------------------------------------
+2014-10-29 00:43:56.416 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 23ce809c-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:43:56.629 GMT:
+Shutting down instance 23ce809c-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
+----------------------------------------------------------------
+2014-10-29 00:43:56.862 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 8c9400a1-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:43:56.900 GMT:
+Shutting down instance 8c9400a1-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
+----------------------------------------------------------------
+2014-10-29 00:44:09.394 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 4d3680a5-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:44:09.502 GMT:
+Shutting down instance 4d3680a5-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
+----------------------------------------------------------------
+2014-10-29 00:44:09.769 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance 560740aa-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:44:09.823 GMT:
+Shutting down instance 560740aa-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
+----------------------------------------------------------------
+2014-10-29 00:44:24.292 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance b6b2c0ae-0149-595b-aca0-00000781c050
+on database directory /home/cloudera/rakesh/project1/TempStatsStore  
+
+Database Class Loader started - derby.database.classpath=''
+
+2014-10-29 00:44:24.492 GMT:
+Shutting down instance b6b2c0ae-0149-595b-aca0-00000781c050
+----------------------------------------------------------------
